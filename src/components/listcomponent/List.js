@@ -31,9 +31,9 @@ class List extends Component{
 
     editcourse=()=>{
         return(
-            <form onSubmit={this.updateCourseItem}>
-                <input dir="auto" ref={(v)=>{this.input= v}} type="text" defaultValue={this.props.detalils.name}/>
-                <button>Upload Course</button>
+            <form className="uploadCourse"onSubmit={this.updateCourseItem}>
+                <input className="inputuploadCourse" dir="auto" placeholder="Edit your course.." ref={(v)=>{this.input= v}} type="text" defaultValue={this.props.detalils.name}/>
+                <button className="btnuploadCourse">Upload Course</button>
             </form>
         )
     }

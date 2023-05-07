@@ -1,82 +1,173 @@
 *{
     box-sizing: border-box;
+    margin:0;
+    padding:0;
+
 }
 body{
     background: #066895;
     margin:0;
+    font-family: sans-serif;
 }
 h2{
     background: #04a6c6;
     padding:18px;
     color:#fff;
+    border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
 }
 .App{
     padding:30px;
     background: #fff;
-    width:80%;
+    width:60%;
     margin:50px auto;
     box-shadow: 1px 2px 5px #04a6c6;
+    border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+}
+button{
+    border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
 }
 
-input{
-    width:80%;
-    border:0;
-    padding:6px 10px;
-    background: #eae7e7;
-    outline: none;
-    font-size: 16px;
-    
+.AddForm{
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+    align-items: center;
+    padding:14px 0;
+    margin:19px 0 10px 0;
+    flex-wrap: wrap;
 }
-button {
-    width:20%;
-    border:0;
-    padding:6px 0;
-    margin:0;
-    outline: 0;
-    color:#fff;
-    font-weight: bold;
+.AddForm input,
+.AddForm button{
+    padding:14px 0;
+    font-size:15px;
+    border: none;
+    outline:none;
+}
+.AddForm button{
+    width:30%;
+    background-color: rgb(8, 208, 8);
     cursor: pointer;
-    background: #09ef23;
+    color: white;
+    font-weight: bold;
 }
-
-button:hover,li>button:first-of-type:hover{
-    background: #09ed24;
+.AddForm input{
+    flex:1;
+    text-indent: 7px;
+    background-color: #e0dddddd;
+    color:black;
 }
-
-li>button:last-of-type:hover{
-    background: #e7150e;
-}
-form button {
-    font-size: 16px;
-}
-ul{
+ul li {
     list-style: none;
-    padding:0;
+    display: flex;
+    align-items: center;
+    padding:7px;
+    background-color: #b8b3b3b2;
+    width:100%;
 }
-li{
-    margin:15px 0;
-    padding:8px 0;
+ul li{
+    margin-bottom: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
-li span{
-    display: inline-block;
-    width:60%;
-    color:#090909;
+ul li span{
+    margin-right:auto;
+    width:200px;
     text-align: left;
-    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 19px;
+    font-weight: 600;
+}
+ul li button{
+    color:white;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    font-size: 15px;
+    padding:5px;
+    font-weight: bolder;
+}
+ul li button:first-of-type{
+    margin-right: 8px;
+    background-color: #04a6c6;
+}
+ul li button:last-of-type{
+    background-color: red;
 }
 
-li >button:first-of-type{
-    background: #4dc55b;
-    color:#fff;
-    width:19%;
-    margin-right:1%;
+.uploadCourse{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    align-items: center;
+    padding: 7px;
+    background-color: #e0dddddd;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
-li>button:last-of-type {
-    background: #d9534f;
-    color: #fff;
+.uploadCourse .inputuploadCourse{
+    font-size: 19px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    text-indent: 7px;
+    flex: 1;
 }
-
-form{
-    margin:15px 0;
-    font-size: 20px;
+.uploadCourse .btnuploadCourse{
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bolder;
+    background-color: rgb(8, 208, 8);
+}
+@media (max-width:850px){
+    .App{
+        width:88%;
+        padding: 10px;
+    }
+}
+@media (max-width:500px){
+    .AddForm,
+    .uploadCourse{
+        flex-direction: column;
+    }
+    .AddForm input,
+    .uploadCourse .inputuploadCourse{
+        width: 100%;
+        margin-bottom:10px
+    }
+    .AddForm button,
+    .uploadCourse .btnuploadCourse{
+        width:43%;
+    }
+    button{
+    font-size: 10px;
+    font-weight: 500;
+    /* width:200px; */
+    }
+    
 }
