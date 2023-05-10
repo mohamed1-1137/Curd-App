@@ -10,8 +10,10 @@ class List extends Component{
         return(
             <li>
             <span>{this.props.detalils.name}</span> 
+            <div className="deletAndEditBtn">
             <button onClick={()=>{this.switchfounctions()}}>Edit Course</button>
             <button onClick={()=>{this.props.deleteCourse(this.props.index)}}>Delete Course</button>
+            </div>
             </li>
         )
     }

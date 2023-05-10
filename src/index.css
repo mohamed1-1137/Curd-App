@@ -144,6 +144,7 @@ ul li button:last-of-type{
     font-weight: bolder;
     background-color: rgb(8, 208, 8);
 }
+
 @media (max-width:850px){
     .App{
         width:88%;
@@ -164,9 +165,26 @@ ul li button:last-of-type{
     .uploadCourse .btnuploadCourse{
         width:43%;
     }
+    ul li{
+        flex-direction: column;
+        align-items: center;
+    }
+    ul li span{
+        width:100%;
+        margin-bottom:10px;
+        text-align: center;
+    }
     button{
     font-size: 10px;
     font-weight: 500;
+    width:111px;
     }
     
+    
+}
+
+@media (max-width:300px) {
+    ul li button:first-of-type {
+            margin: 5px 0;
+        }
 }
