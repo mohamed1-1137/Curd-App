@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Curd-App/static/css/main.c96b4ec0.css",
-    "main.js": "/Curd-App/static/js/main.e6482a26.js",
+    "main.css": "/Curd-App/static/css/main.702aa8c6.css",
+    "main.js": "/Curd-App/static/js/main.e7fb66bc.js",
     "static/js/787.ecfdea4a.chunk.js": "/Curd-App/static/js/787.ecfdea4a.chunk.js",
     "index.html": "/Curd-App/index.html",
-    "main.c96b4ec0.css.map": "/Curd-App/static/css/main.c96b4ec0.css.map",
-    "main.e6482a26.js.map": "/Curd-App/static/js/main.e6482a26.js.map",
+    "main.702aa8c6.css.map": "/Curd-App/static/css/main.702aa8c6.css.map",
+    "main.e7fb66bc.js.map": "/Curd-App/static/js/main.e7fb66bc.js.map",
     "787.ecfdea4a.chunk.js.map": "/Curd-App/static/js/787.ecfdea4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c96b4ec0.css",
-    "static/js/main.e6482a26.js"
+    "static/css/main.702aa8c6.css",
+    "static/js/main.e7fb66bc.js"
   ]
 }
